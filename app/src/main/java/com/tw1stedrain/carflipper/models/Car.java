@@ -14,6 +14,7 @@ public class Car {
     private String model;
     private int year;
     private int initialPaid;
+    private String details;
     private boolean sold = false;
 
 
@@ -65,6 +66,14 @@ public class Car {
         this.initialPaid = initialPaid;
     }
 
+    public String getDetails() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
+    }
+
     public boolean isSold() {
         return sold;
     }
@@ -72,4 +81,6 @@ public class Car {
     public void setSold(boolean sold) {
         this.sold = sold;
     }
+
+
 }
