@@ -27,9 +27,9 @@ public class CarLayoutAdapter extends RecyclerView.Adapter<CarLayoutAdapter.CarH
         public CarHolder(@NonNull View itemView) {
             super(itemView);
 
-            this.textNickname = itemView.findViewById(R.id.nickname);
-            this.textMake = itemView.findViewById(R.id.make);
-            this.textModel = itemView.findViewById(R.id.model);
+            this.textNickname = itemView.findViewById(R.id.recycler_nickname);
+            this.textMake = itemView.findViewById(R.id.recycler_make);
+            this.textModel = itemView.findViewById(R.id.recycler_model);
         }
 
         public void setCar(final Car car) {

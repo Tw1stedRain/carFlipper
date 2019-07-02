@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/add_work_details" />
 
     <Button
         android:id="@+id/button3"
@@ -68,7 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/textView3"
+        android:id="@+id/add_work_details"
         android:layout_width="397dp"
         android:layout_height="147dp"
         android:layout_marginStart="8dp"
