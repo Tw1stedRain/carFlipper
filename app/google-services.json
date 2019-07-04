@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "708202960162",
+    "firebase_url": "https://carflipper-5f9fb.firebaseio.com",
+    "project_id": "carflipper-5f9fb",
+    "storage_bucket": "carflipper-5f9fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708202960162:android:8889fe8d3313ba81",
+        "android_client_info": {
+          "package_name": "com.tw1stedrain.carflipper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708202960162-86p12ieeneb0db9cb9chga78idnt7jg7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHOW9D8WEpBVoR6NdRfugMRHSfIQKQVjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708202960162-86p12ieeneb0db9cb9chga78idnt7jg7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

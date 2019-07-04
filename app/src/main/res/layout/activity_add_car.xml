@@ -26,6 +26,7 @@
         android:layout_marginStart="219dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:onClick="newCarClick"
         android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,6 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:hint="Nickname"
         android:inputType="text"/>
 
     <EditText

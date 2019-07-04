@@ -3,6 +3,9 @@ package com.tw1stedrain.carflipper.models;
 import com.google.firebase.firestore.Exclude;
 import com.google.firebase.firestore.IgnoreExtraProperties;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @IgnoreExtraProperties
 public class Car {
 
@@ -16,6 +19,8 @@ public class Car {
     private int initialPaid;
     private String details;
     private boolean sold = false;
+
+    private List<Part> parts = new ArrayList<>();
 
 
     public String getId() {
@@ -82,5 +87,11 @@ public class Car {
         this.sold = sold;
     }
 
+    public List<Part> getParts() {
+        return parts;
+    }
 
+    public void setParts(List<Part> parts) {
+        this.parts = parts;
+    }
 }
