@@ -20,7 +20,7 @@ public class Car {
     private String details;
     private boolean sold = false;
 
-    private List<Part> parts = new ArrayList<>();
+    private List<Work> works = new ArrayList<>();
 
 
     public String getId() {
@@ -87,11 +87,11 @@ public class Car {
         this.sold = sold;
     }
 
-    public List<Part> getParts() {
-        return parts;
+    public List<Work> getWorks() {
+        return works;
     }
 
-    public void setParts(List<Part> parts) {
-        this.parts = parts;
+    public void setWorks(List<Work> works) {
+        this.works = works;
     }
 }
