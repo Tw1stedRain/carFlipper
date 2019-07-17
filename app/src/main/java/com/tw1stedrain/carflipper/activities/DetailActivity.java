@@ -48,7 +48,6 @@ public class DetailActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         carId = intent.getStringExtra("carId");
-        System.out.println("detail carId: " + carId);
 
         getCar();
     }
@@ -91,6 +90,7 @@ public class DetailActivity extends AppCompatActivity {
 
     public void updateCar(View view) {
         Intent intent = new Intent(this, UpdateCarActivity.class);
+        intent.putExtra("carId", carId);
         startActivity(intent);
     }
 }

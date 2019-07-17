@@ -43,7 +43,6 @@ public class CarLayoutAdapter extends RecyclerView.Adapter<CarLayoutAdapter.CarH
                     Context context = itemView.getContext();
                     Intent intent = new Intent(context, DetailActivity.class);
                     intent.putExtra("carId", car.getId());
-                    System.out.println("carId: " + car.getId());
                     context.startActivity(intent);
                 }
             });

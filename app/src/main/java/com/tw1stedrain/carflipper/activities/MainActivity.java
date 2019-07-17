@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
 
-
         // recycler view
         List<Car> empty = new ArrayList<>();
         recyclerView = findViewById(R.id.recycle_cars);
@@ -46,10 +45,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         adapter = new CarLayoutAdapter(empty);
         recyclerView.setAdapter(adapter);
+
+        onFillClick();
     }
 
     // retrieve info from db, fill recycler
-    public void onFillClick(View view) {
+    public void onFillClick() {
         db.collection("cars")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -59,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
                             QuerySnapshot snap = task.getResult();
                             List<Car> cars = new ArrayList<>();
                             for (DocumentSnapshot doc : snap.getDocuments()) {
-                                Log.d("CAR", "ID: " + doc.getId() + "Nickname: " + doc.get("nickname"));
 
                                 Car car = doc.toObject(Car.class);
                                 car.setId(doc.getId());
@@ -70,9 +70,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
-
-
-
 
     public void addCar(View view) {
         Intent intent = new Intent(this, AddCarActivity.class);
